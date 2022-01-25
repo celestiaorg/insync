@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from '../../assets/celestia_logo.png';
+import logo from '../../assets/celestia_logo_white.png';
 import './index.css';
 import DisconnectButton from './DisconnectButton';
 import Tabs from './Tabs';
@@ -228,8 +228,9 @@ class NavBar extends Component {
                         await window.keplr.experimentalSuggestChain({
                             chainId: "devnet-2",
                             chainName: "Celestia Devnet-2",
-                            rpc: "https://keplr.celestia.observer/rpc",
-                            rest: "https://keplr.celestia.observer/rest",
+                            rpc: "https://<rpc_celestia_node_address>",
+                            rest: "https://<rest_celestia_node_address>",
+                            walletUrlForStaking	: "https://staking.celestia.observer",
                             bip44: {
                                 coinType: 118,
                             },
