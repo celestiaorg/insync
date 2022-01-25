@@ -1,6 +1,6 @@
 {
-  "short_name": "OmniFlix Community",
-  "name": "OmniFlix Community",
+  "short_name": "Celestia Staking UI",
+  "name": "Celestia Staking UI",
   "icons": [
     {
       "src": "favicon.ico",
@@ -8,14 +8,14 @@
       "type": "image/x-icon"
     },
     {
-      "src": "assets/logos/logo_192x192.png",
+      "src": "assets/logos/logo_192x96.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "192x96"
     },
     {
-      "src": "assets/logos/logo_512x512.png",
+      "src": "assets/logos/logo_512x256.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "512x256"
     }
   ],
   "start_url": ".",

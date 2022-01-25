@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from '../../assets/OmniFlix.svg';
+import logo from '../../assets/celestia_logo.png';
 import './index.css';
 import DisconnectButton from './DisconnectButton';
 import Tabs from './Tabs';
@@ -219,7 +219,66 @@ class NavBar extends Component {
     }
 
     initKeplr () {
-        window.onload = () => this.handleChain(true);
+        window.onload = async () => {
+            if (!window.getOfflineSigner || !window.keplr) {
+                alert("Please install keplr extension");
+            } else {
+                if (window.keplr.experimentalSuggestChain) {
+                    try {
+                        await window.keplr.experimentalSuggestChain({
+                            chainId: "devnet-2",
+                            chainName: "Celestia Devnet-2",
+                            rpc: "https://keplr.celestia.observer/rpc",
+                            rest: "https://keplr.celestia.observer/rest",
+                            bip44: {
+                                coinType: 118,
+                            },
+                            bech32Config: {
+                                bech32PrefixAccAddr: "celes",
+                                bech32PrefixAccPub: "celespub",
+                                bech32PrefixValAddr: "celesvaloper",
+                                bech32PrefixValPub: "celesvaloperpub",
+                                bech32PrefixConsAddr: "celesvalcons",
+                                bech32PrefixConsPub: "celesvalconspub",
+                            },
+                            currencies: [
+                                {
+                                    coinDenom: "celes",
+                                    coinMinimalDenom: "celes",
+                                    coinDecimals: 0,
+                                    coinGeckoId: "celes",
+                                },
+                            ],
+                            feeCurrencies: [
+                                {
+                                    coinDenom: "celes",
+                                    coinMinimalDenom: "celes",
+                                    coinDecimals: 0,
+                                    coinGeckoId: "celes",
+                                },
+                            ],
+                            stakeCurrency: {
+                                coinDenom: "celes",
+                                coinMinimalDenom: "celes",
+                                coinDecimals: 0,
+                                coinGeckoId: "celes",
+                            },
+                            coinType: 118,
+                            gasPriceStep: {
+                                low: 0.01,
+                                average: 0.025,
+                                high: 0.03,
+                            },
+                        });
+                    } catch {
+                        alert("Failed to suggest the chain");
+                    }
+                } else {
+                    alert("Please use the recent version of keplr extension");
+                }
+            }
+            this.handleChain(true);
+        }
     }
 
     handleChain (fetch) {
@@ -247,7 +306,7 @@ class NavBar extends Component {
         return (
             <div className={ClassNames('nav_bar padding', localStorage.getItem('of_co_address') || this.props.address
                 ? '' : 'disconnected_nav')}>
-                <img alt="OmniFlix" src={logo}/>
+                <img alt="Celestia" src={logo}/>
                 <ExpansionButton/>
                 <div className={ClassNames('right_content', this.props.show ? 'show' : '')}>
                     <div className="back_button" onClick={this.props.handleClose}>
