@@ -14,7 +14,7 @@
     "@material-ui/lab": "^4.0.0-alpha.58",
     "classnames": "^2.2.6",
     "history": "^5.0.0",
-    "js-base64": "^3.6.0",
+    "js-base64": "^3.7.5",
     "latest": "^0.2.0",
     "moment": "^2.29.1",
     "mui-datatables": "^3.7.7",
