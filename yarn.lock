@@ -1177,7 +1177,7 @@
     ripemd160 "^2.0.2"
     sha.js "^2.4.11"
 
-"@cosmjs/amino@0.26.5", "@cosmjs/amino@^0.26.5":
+"@cosmjs/amino@0.26.5":
   version "0.26.5"
   resolved "https://registry.yarnpkg.com/@cosmjs/amino/-/amino-0.26.5.tgz#69db28610577a2cb647f0bfc1d2226e865d50455"
   integrity sha512-RFf9P1eb7O60JEWaZ5jbQA0wVbwU4SiBJINEjZkhkB1vUrAxCkfSHBZdJrVg8+IIRSWxPUUVr8PMuIyWlORV3A==
@@ -1186,6 +1186,16 @@
     "@cosmjs/encoding" "0.26.5"
     "@cosmjs/math" "0.26.5"
     "@cosmjs/utils" "0.26.5"
+
+"@cosmjs/amino@^0.31.0":
+  version "0.31.1"
+  resolved "https://registry.yarnpkg.com/@cosmjs/amino/-/amino-0.31.1.tgz#e6b4adc3ebe19ddfd953c67ee04b1eae488238af"
+  integrity sha512-kkB9IAkNEUFtjp/uwHv95TgM8VGJ4VWfZwrTyLNqBDD1EpSX2dsNrmUe7k8OMPzKlZUFcKmD4iA0qGvIwzjbGA==
+  dependencies:
+    "@cosmjs/crypto" "^0.31.1"
+    "@cosmjs/encoding" "^0.31.1"
+    "@cosmjs/math" "^0.31.1"
+    "@cosmjs/utils" "^0.31.1"
 
 "@cosmjs/crypto@0.26.5":
   version "0.26.5"
@@ -1203,10 +1213,32 @@
     ripemd160 "^2.0.2"
     sha.js "^2.4.11"
 
+"@cosmjs/crypto@^0.31.1":
+  version "0.31.1"
+  resolved "https://registry.yarnpkg.com/@cosmjs/crypto/-/crypto-0.31.1.tgz#ce4917df0f7b38f0909a32020907ccff04acefe6"
+  integrity sha512-4R/SqdzdVzd4E5dpyEh1IKm5GbTqwDogutyIyyb1bcOXiX/x3CrvPI9Tb4WSIMDLvlb5TVzu2YnUV51Q1+6mMA==
+  dependencies:
+    "@cosmjs/encoding" "^0.31.1"
+    "@cosmjs/math" "^0.31.1"
+    "@cosmjs/utils" "^0.31.1"
+    "@noble/hashes" "^1"
+    bn.js "^5.2.0"
+    elliptic "^6.5.4"
+    libsodium-wrappers-sumo "^0.7.11"
+
 "@cosmjs/encoding@0.26.5":
   version "0.26.5"
   resolved "https://registry.yarnpkg.com/@cosmjs/encoding/-/encoding-0.26.5.tgz#29ccaa647c28d4bffd5f0f46dde0eedf7e4745b4"
   integrity sha512-lkw2mLvDZJqVCOZCBqdMzoGUtC4CN7c4+WMCGKDej3TpC0khsv7KZ1eFcsnN6EuZwHyGH67uyyjrs5x0ah9rYg==
+  dependencies:
+    base64-js "^1.3.0"
+    bech32 "^1.1.4"
+    readonly-date "^1.0.0"
+
+"@cosmjs/encoding@^0.31.1":
+  version "0.31.1"
+  resolved "https://registry.yarnpkg.com/@cosmjs/encoding/-/encoding-0.31.1.tgz#0041b2650c443d883e22f27c7d3cd7b844c6d0ec"
+  integrity sha512-IuxP6ewwX6vg9sUJ8ocJD92pkerI4lyG8J5ynAM3NaX3q+n+uMoPRSQXNeL9bnlrv01FF1kIm8if/f5F7ZPtkA==
   dependencies:
     base64-js "^1.3.0"
     bech32 "^1.1.4"
@@ -1239,6 +1271,13 @@
   integrity sha512-1G7NgLJ35g4jUupvyu7Igtgu/fj2NmgpOofpNk1JqIwMXrm3Tx7lOWbxJq8Wrjj2EoH7FNytSO1dXNGeK15UJw==
   dependencies:
     bn.js "^4.11.8"
+
+"@cosmjs/math@^0.31.1":
+  version "0.31.1"
+  resolved "https://registry.yarnpkg.com/@cosmjs/math/-/math-0.31.1.tgz#74c02cf237c2996b77661b636b014168b18d95e6"
+  integrity sha512-kiuHV6m6DSB8/4UV1qpFhlc4ul8SgLXTGRlYkYiIIP4l0YNeJ+OpPYaOlEgx4Unk2mW3/O2FWYj7Jc93+BWXng==
+  dependencies:
+    bn.js "^5.2.0"
 
 "@cosmjs/proto-signing@0.26.5", "@cosmjs/proto-signing@^0.26.5":
   version "0.26.5"
@@ -1306,6 +1345,11 @@
   version "0.26.5"
   resolved "https://registry.yarnpkg.com/@cosmjs/utils/-/utils-0.26.5.tgz#54d73c85c6127e3c439d25bee6983fca8fa700c1"
   integrity sha512-VB4Z7lEIXA36q0RON15KexzEosToUtdDyMv7UXSBHSl4mLG/fIZgBIpBEYsaPZ1kh43xyINeKQJiGCp2z5rI+g==
+
+"@cosmjs/utils@^0.31.1":
+  version "0.31.1"
+  resolved "https://registry.yarnpkg.com/@cosmjs/utils/-/utils-0.31.1.tgz#e6055cd7d722fa72df9cbd0d39cd1f7a9ac80483"
+  integrity sha512-n4Se1wu4GnKwztQHNFfJvUeWcpvx3o8cWhSbNs9JQShEuB3nv3R5lqFBtDCgHZF/emFQAP+ZjF8bTfCs9UBGhA==
 
 "@csstools/convert-colors@^1.4.0":
   version "1.4.0"
@@ -1591,6 +1635,11 @@
   dependencies:
     call-me-maybe "^1.0.1"
     glob-to-regexp "^0.3.0"
+
+"@noble/hashes@^1":
+  version "1.3.2"
+  resolved "https://registry.yarnpkg.com/@noble/hashes/-/hashes-1.3.2.tgz#6f26dbc8fbc7205873ce3cee2f690eba0d421b39"
+  integrity sha512-MVC8EAQp7MvEcm30KWENFjgR+Mkmf+D189XJTkFIlwohU5hcBbn1ZkKq7KVTi2Hme3PMGF390DaL52beVrIihQ==
 
 "@nodelib/fs.stat@^1.1.2":
   version "1.1.3"
@@ -2885,6 +2934,11 @@ bn.js@^5.0.0, bn.js@^5.1.1:
   version "5.2.0"
   resolved "https://registry.yarnpkg.com/bn.js/-/bn.js-5.2.0.tgz#358860674396c6997771a9d051fcc1b57d4ae002"
   integrity sha512-D7iWRBvnZE8ecXiLj/9wbxH7Tk79fAh8IHaTNq1RWRixsS02W+5qS+iE9yq6RYl0asXx5tw0bLhmT5pIfbSquw==
+
+bn.js@^5.2.0:
+  version "5.2.1"
+  resolved "https://registry.yarnpkg.com/bn.js/-/bn.js-5.2.1.tgz#0bc527a6a0d18d0aa8d5b0538ce4a77dccfa7b70"
+  integrity sha512-eXRvHzWyYPBuB4NBy0cmYQjGitUrtqwbvlzP3G6VFnNRbsZQIxQ10PbKKHt8gZ/HW/D/747aDl+QkDqg3KQLMQ==
 
 body-parser@1.19.0:
   version "1.19.0"
@@ -4486,7 +4540,7 @@ electron-to-chromium@^1.3.378, electron-to-chromium@^1.3.649:
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.701.tgz#5e796ed7ce88cd77bc7bf831cf311ef6b067c389"
   integrity sha512-Zd9ofdIMYHYhG1gvnejQDvC/kqSeXQvtXF0yRURGxgwGqDZm9F9Fm3dYFnm5gyuA7xpXfBlzVLN1sz0FjxpKfw==
 
-elliptic@^6.5.3:
+elliptic@^6.5.3, elliptic@^6.5.4:
   version "6.5.4"
   resolved "https://registry.yarnpkg.com/elliptic/-/elliptic-6.5.4.tgz#da37cebd31e79a1367e941b592ed1fbebd58abbb"
   integrity sha512-iLhC6ULemrljPZb+QutR5TQGB+pdW6KGD5RSegS+8sorOZT+rdQFbsQFJgvN3eRqNALqJer4oQ16YvJHlU8hzQ==
@@ -7627,6 +7681,18 @@ levn@^0.3.0, levn@~0.3.0:
   dependencies:
     prelude-ls "~1.1.2"
     type-check "~0.3.2"
+
+libsodium-sumo@^0.7.11:
+  version "0.7.11"
+  resolved "https://registry.yarnpkg.com/libsodium-sumo/-/libsodium-sumo-0.7.11.tgz#ab0389e2424fca5c1dc8c4fd394906190da88a11"
+  integrity sha512-bY+7ph7xpk51Ez2GbE10lXAQ5sJma6NghcIDaSPbM/G9elfrjLa0COHl/7P6Wb/JizQzl5UQontOOP1z0VwbLA==
+
+libsodium-wrappers-sumo@^0.7.11:
+  version "0.7.11"
+  resolved "https://registry.yarnpkg.com/libsodium-wrappers-sumo/-/libsodium-wrappers-sumo-0.7.11.tgz#d96329ee3c0e7ec7f5fcf4cdde16cc3a1ae91d82"
+  integrity sha512-DGypHOmJbB1nZn89KIfGOAkDgfv5N6SBGC3Qvmy/On0P0WD1JQvNRS/e3UL3aFF+xC0m+MYz5M+MnRnK2HMrKQ==
+  dependencies:
+    libsodium-sumo "^0.7.11"
 
 libsodium-wrappers@^0.7.6:
   version "0.7.9"
